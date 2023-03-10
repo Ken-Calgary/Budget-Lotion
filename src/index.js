@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 if (localStorage.getItem("storedNotes") == null) {
-  localStorage.setItem("noteList", JSON.stringify([]));
+  localStorage.setItem("storedNotes", JSON.stringify([]));
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
