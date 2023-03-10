@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate} from 'react-router-dom';
 import Layout from './Layout';
 import UnselectedNote from './UnselectedNote'
 import SelectedNote from './SelectedNote';
