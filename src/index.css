@@ -1,0 +1,221 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body, #root, #all-html {
+  height: 100vh;
+  width: 100%;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+/*Button Hover*/
+.clickable:hover {
+  background-color: #242526;
+  color: #E4E6EB;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*Header */
+#main-header {
+  display: flex;
+  justify-content: center;
+  min-height: 10%;
+  border-top: 4px solid #0ECFFF;
+  border-bottom: 2px solid #EDEDED;
+}
+
+#header-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0.08;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#header-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 0.92;
+}
+
+/*Main Container for sidebar and notes*/
+#note-container {
+  display: flex;
+  height: 89.25%;
+}
+
+/*Sidebar container*/
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-width: 20%;
+  max-width: 20%;
+  border-right: 2px solid #EDEDED
+}
+
+/*Top part of sidebar (Title and add notes button)*/
+#sidebar-title {
+  display: flex;
+  min-height: 8%;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 16px;
+  border-bottom: 2px solid #EDEDED;
+}
+
+#sidebar-header {
+  font-size: 28px;
+}
+
+#add-notes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 35%;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+/*Lower part of sidebar (stored notes)*/
+#sidebar-body {
+  overflow-y: auto;
+  overflow-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-note-desc {
+  display: flex;
+  flex-direction: column;
+  padding-right: 18px;
+  padding-left: 18px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  border-bottom: 2px solid #E4E6EB;
+}
+
+.sidebar-note-date {
+  font-size: 10px;
+  color: #989898;
+  padding-bottom: 8px;
+}
+
+/* When no notes exist*/
+.no-notes {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 18px;
+  color: #989898;
+}
+
+
+/*No Selection */
+#none-selected {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 32px;
+  color: #989898;
+}
+
+/*Actual Notes*/
+.notes {
+  width: 100%;
+}
+
+.note-info {
+  display: flex;
+  justify-content: space-between;
+  height: 12%;
+}
+
+/*Name of note and date*/
+.note-info-inner {
+  display: flex;
+  flex-direction: column;
+  padding-left: 18px;
+  flex: 0.80;
+  justify-content: center;
+}
+
+/*Buttons for save and delete*/
+.note-buttons {
+  display: flex;
+  flex: 0.20;
+}
+
+.note-save {
+  display: flex;
+  flex: 0.5;
+  align-items: center;
+  justify-content: center;
+}
+.note-delete {
+  display: flex;
+  flex: 0.5;
+  align-items: center;
+  justify-content: center;
+}
+
+.note-title {
+  font-size: 24px;
+}
+
+.note-date {
+  font-size: 14px;
+}
+
+.note-contents {
+  height: 88%;
+  overflow-y: auto;
+}
+
+.contents {
+  height: 88%;
+}
+
+/*Edit Notes*/
+#note-title-edit {
+  resize: none;
+  outline: none;
+  border: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#note-date-edit  {
+  border: none;
+  width:fit-content;
+}
+/*Extends quillbox to fit whole screen*/
+.quill {
+  height: 93.5%;
+}
+.selected {
+  background-color: #363636;
+  color: #EDEDED;
+}
+
+.ql-editor {
+  height: 88%;
+}
