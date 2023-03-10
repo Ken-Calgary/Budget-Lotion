@@ -4,9 +4,6 @@ import UnselectedNote from './UnselectedNote'
 import SelectedNote from './SelectedNote';
 import EditNote from './EditNote';
 
-if (localStorage.getItem("storedNotes") == null) {
-  localStorage.setItem("noteList", JSON.stringify({}));
-}
 function App() {
   return (
     <BrowserRouter>
