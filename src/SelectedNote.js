@@ -20,8 +20,7 @@ function SelectedNote() {
         let answer = window.confirm("Are you sure?");
 
         if (answer) {
-            let index = getIndex();
-            console.log(currentNote)
+            console.log(index);
             setNotes(notes.filter((note) => note.id !== currentNote));
             changeURL("/");
         }

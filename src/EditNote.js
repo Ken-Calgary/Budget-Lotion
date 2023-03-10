@@ -1,13 +1,12 @@
 import ReactQuill from 'react-quill';
-import {useRef, useEffect} from 'react';
+import {useRef} from 'react';
 import {useOutletContext, useNavigate, useParams} from 'react-router-dom';
 import 'react-quill/dist/quill.snow.css';
 
 function EditNote() {
-    const [notes, setNotes, currentNote, index, setIndex] = useOutletContext();
+    const [notes, setNotes, currentNote, index] = useOutletContext();
     const {number} = useParams();
     const changeURL = useNavigate();
-    const findCurrentNote = notes.find(note => note.id === currentNote);
     const noteTitle = useRef();
     const noteDate = useRef();
     const noteContent = useRef();

@@ -1,6 +1,6 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import {v4 as uuidv4} from 'uuid';
-import {Outlet, useNavigate, useParams} from "react-router-dom";
+import {Outlet} from "react-router-dom";
 import Header from "./Header";
 import NoteSidebar from "./NoteSidebar";
 
@@ -13,7 +13,6 @@ function Layout() {
     const toggleSidebar = () => {
         setSidebarVisibility(!sidebarVisibility);
     }
-    console.log(JSON.parse(localStorage.storedNotes).index);
     const addNote = () => {
       const newNote = {
           id: uuidv4(),
