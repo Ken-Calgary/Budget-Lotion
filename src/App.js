@@ -10,6 +10,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route element = {<Layout/>}>
+          <Route path ="/" element={<Navigate to ="/notes"/>}></Route>
           <Route path = "/notes" element = {<UnselectedNote/>}></Route>
           <Route path = "/notes/:number" element = {<SelectedNote />}></Route>
           <Route path = "/notes/:number/edit" element = {<EditNote/>}></Route>
